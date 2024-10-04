@@ -12,13 +12,14 @@
     </div>
 
     <script>
-        // পাঁচটি শীর্ষ নিউজ চ্যানেলের RSS ফিড URL
+        // ছয়টি শীর্ষ নিউজ চ্যানেলের RSS ফিড URL
         const rssFeedUrls = [
             'https://feeds.bbci.co.uk/news/world/rss.xml', // BBC News
             'http://rss.cnn.com/rss/edition.rss',          // CNN
             'http://feeds.reuters.com/reuters/topNews',    // Reuters
             'https://rss.nytimes.com/services/xml/rss/nyt/World.xml', // NY Times
-            'https://www.aljazeera.com/xml/rss/all.xml'    // Al Jazeera
+            'https://www.aljazeera.com/xml/rss/all.xml',   // Al Jazeera
+            'https://feeds.foxnews.com/foxnews/world'       // Fox News
         ];
 
         // RSS ফিড থেকে খবর ফেচ এবং প্রদর্শন করা
@@ -45,8 +46,9 @@
                 .catch(error => console.error('Error fetching the RSS feed:', error));
         };
 
-        // সব ফিড থেকে খবর ফেচ করা
+        // সকল ফিড থেকে খবর ফেচ করা
         rssFeedUrls.forEach(fetchNews);
     </script>
 </body>
 </html>
+
